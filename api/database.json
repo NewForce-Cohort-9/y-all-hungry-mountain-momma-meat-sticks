@@ -1,123 +1,137 @@
 {
-    "locations": [
-      {
-        "id": 1,
-        "name": "location1"
-      },
-      {
-        "id": 2,
-        "name": "location2"
-      },
-      {
-        "id": 3,
-        "name": "location3"
-      }
-    ],
-    "foods": [
-      {
-        "id": 1,
-        "name": "food1",
-        "price": 1,
-        "description": "ab1"
-      },
-      {
-        "id": 2,
-        "name": "food2",
-        "price": 2,
-        "description": "ab2"
-      },
-      {
-        "id": 3,
-        "name": "food3",
-        "price": 3,
-        "description": "ab3"
-      }
-    ],
-    "drinks": [
-      {
-        "id": 1,
-        "name": "drink1",
-        "price": 1
-      },
-      {
-        "id": 2,
-        "name": "drink2",
-        "price": 2
-      },
-      {
-        "id": 3,
-        "name": "drink3",
-        "price": 3
-      }
-    ],
-    "desserts": [
-      {
-        "id": 1,
-        "name": "dessert1",
-        "price": 1
-      },
-      {
-        "id": 2,
-        "name": "dessert2",
-        "price": 2
-      },
-      {
-        "id": 3,
-        "name": "dessert3",
-        "price": 3
-      }
-    ],
-    "locationFoods": [
-      {
-        "id": 1,
-        "name": "locationFoods1",
-        "locationId": "2",
-        "foodId": "2",
-        "quantity": 5
-      },
-      {
-        "id": 2,
-        "name": "locationFoods2",
-        "locationId": "1",
-        "foodId": "1",
-        "quantity": 4
-      },
-      {
-        "id": 3,
-        "name": "locationFoods3",
-        "locationId": "3",
-        "foodId": "3",
-        "quantity": 6
-      }
-    ],
-    "orders": [
-      {
-        "locationId": 0,
-        "foodId": 0,
-        "drinkId": 0,
-        "dessertId": 0,
-        "id": 1
-      },
-      {
-        "locationId": 1,
-        "foodId": 1,
-        "drinkId": 2,
-        "dessertId": 3,
-        "id": 2
-      },
-      {
-        "locationId": 1,
-        "foodId": 1,
-        "drinkId": 2,
-        "dessertId": 3,
-        "id": 3
-      },
-      {
-        "locationId": 1,
-        "foodId": 1,
-        "drinkId": 2,
-        "dessertId": 3,
-        "id": 4
-      }
-    ]
-  }
+  "locations": [
+    {
+      "id": 1,
+      "name": "location1"
+    },
+    {
+      "id": 2,
+      "name": "location2"
+    },
+    {
+      "id": 3,
+      "name": "location3"
+    }
+  ],
+  "foods": [
+    {
+      "id": 1,
+      "name": "food1",
+      "price": 1,
+      "description": "ab1"
+    },
+    {
+      "id": 2,
+      "name": "food2",
+      "price": 2,
+      "description": "ab2"
+    },
+    {
+      "id": 3,
+      "name": "food3",
+      "price": 3,
+      "description": "ab3"
+    }
+  ],
+  "drinks": [
+    {
+      "id": 1,
+      "name": "drink1",
+      "price": 1
+    },
+    {
+      "id": 2,
+      "name": "drink2",
+      "price": 2
+    },
+    {
+      "id": 3,
+      "name": "drink3",
+      "price": 3
+    }
+  ],
+  "desserts": [
+    {
+      "id": 1,
+      "name": "dessert1",
+      "price": 1
+    },
+    {
+      "id": 2,
+      "name": "dessert2",
+      "price": 2
+    },
+    {
+      "id": 3,
+      "name": "dessert3",
+      "price": 3
+    }
+  ],
+  "locationFoods": [
+    {
+      "id": 1,
+      "name": "locationFoods1",
+      "locationId": "2",
+      "foodId": "2",
+      "quantity": 5
+    },
+    {
+      "id": 2,
+      "name": "locationFoods2",
+      "locationId": "1",
+      "foodId": "1",
+      "quantity": 4
+    },
+    {
+      "id": 3,
+      "name": "locationFoods3",
+      "locationId": "3",
+      "foodId": "3",
+      "quantity": 6
+    }
+  ],
+  "orders": [
+    {
+      "locationId": 0,
+      "foodId": 0,
+      "drinkId": 0,
+      "dessertId": 0,
+      "id": 1
+    },
+    {
+      "locationId": 1,
+      "foodId": 1,
+      "drinkId": 2,
+      "dessertId": 3,
+      "id": 2
+    },
+    {
+      "locationId": 1,
+      "foodId": 1,
+      "drinkId": 2,
+      "dessertId": 3,
+      "id": 3
+    },
+    {
+      "locationId": 1,
+      "foodId": 1,
+      "drinkId": 2,
+      "dessertId": 3,
+      "id": 4
+    },
+    {
+      "locationId": 0,
+      "foodId": 0,
+      "drinkId": 0,
+      "dessertId": 0,
+      "id": 5
+    },
+    {
+      "locationId": 1,
+      "foodId": 1,
+      "drinkId": 1,
+      "dessertId": 1,
+      "id": 6
+    }
+  ]
+}
