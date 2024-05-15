@@ -24,6 +24,7 @@ export const Orders = async () => {
             const orderDrink = order.drink ? order.drink.name : "None"
             const orderDessert = order.dessert ? order.dessert.name : "None"
 
+            
             return `
                 <section class="order card">
                     <p>(Food image)  ${orderFood}</p>
