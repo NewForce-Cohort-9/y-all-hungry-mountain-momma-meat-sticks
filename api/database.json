@@ -57,32 +57,27 @@
     {
       "id": 1,
       "name": "Bun Honey Meat Mead",
-      "price": 3.5,
-      "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/09/Bottled-mead-1dd8398.jpeg"
+      "price": 3.5
     },
     {
       "id": 2,
       "name": "Hotdog Flavored Water",
-      "price": 2,
-      "image": "https://www.hindustantimes.com/ht-img/img/2024/03/28/550x309/Screenshot_2024-03-28_154004_1711620616112_1711620622378.png"
+      "price": 2
     },
     {
       "id": 3,
       "name": "Weaner Wine",
-      "price": 3.5,
-      "image": "https://www.thedailymeal.com/img/gallery/what-wines-pair-with-hot-dogs/winehotdog.jpg"
+      "price": 3.5
     },
     {
       "id": 4,
       "name": "Catchup Kombucha",
-      "price": 3.5,
-      "image": "https://www.cravethegood.com/wp-content/uploads/2022/03/cranberry-kombucha-recipe-6-683x1024.jpg"
+      "price": 3.5
     },
     {
       "id": 5,
       "name": "Water",
-      "price": 1,
-      "image": "https://etc.usf.edu/clippix/pix/clear-glass-of-ice-water_medium.jpg"
+      "price": 1
     }
   ],
   "desserts": [
@@ -225,25 +220,18 @@
   ],
   "orders": [
     {
-      "locationId": 5,
-      "foodId": 1,
-      "drinkId": 1,
-      "dessertId": 1,
+      "locationId": 4,
+      "foodId": 0,
+      "drinkId": 0,
+      "dessertId": 0,
       "id": 1
     },
     {
-      "locationId": 0,
+      "locationId": 1,
       "foodId": 0,
-      "drinkId": 1,
+      "drinkId": 0,
       "dessertId": 0,
       "id": 2
-    },
-    {
-      "locationId": 0,
-      "foodId": 0,
-      "drinkId": 1,
-      "dessertId": 0,
-      "id": 3
     }
   ]
 }

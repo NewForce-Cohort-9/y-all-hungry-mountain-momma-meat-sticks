@@ -1,33 +1,23 @@
-import { setDrinkChoice } from "./transientState.js"
+import { updateTotalPrice } from './runningPrice.js';
 
-
-const handleDrinkChoice = (event) => {
+const handleDrinksChoice = (event) => {
     if (event.target.id === "drink") {
-        setDrinkChoice(parseInt(event.target.value))
+        updateTotalPrice(); // Update the total price whenever a drink is selected
     }
-}
+};
 
 export const drinkOptions = async () => {
-    const response = await fetch("http://localhost:8088/drinks") //check link!!!
-    const drinks= await response.json()
+    const response = await fetch("http://localhost:8088/drinks");
+    const drinks = await response.json();
 
-    //debugger
+    let drinksOptionsHTML = "";
+    drinksOptionsHTML += `<select id="drink">`;
+    drinksOptionsHTML += `<option value="0">Drinks Items</option>`;
+    drinksOptionsHTML += `<option value="none">None</option>`;
+    for (const drink of drinks) {
+        drinksOptionsHTML += `<option value="${drink.price}" data-price="${drink.price}">${drink.name}</option>`;
+    }
+    drinksOptionsHTML += `</select>`;
 
-    document.addEventListener("change", handleDrinkChoice)
-
-    let drinkOptionsHTML =""
-
-    drinkOptionsHTML +=`<select id="drink">`
-    drinkOptionsHTML += `<option value="0">Drink Items</option>`  
-    drinkOptionsHTML += `<option value="none">None</option>`
- 
-
-for (const drink of drinks){ //check name "drinks"
-    drinkOptionsHTML+=`<option value="${drink.id}">${drink.name}">${drink.image}</option>`
-}
-
-drinkOptionsHTML+= `</select>`
-
-//debugger
-return drinkOptionsHTML
-}
+    return drinksOptionsHTML;
+};
