@@ -1,137 +1,223 @@
 {
-  "locations": [
-    {
-      "id": 1,
-      "name": "location1"
-    },
-    {
-      "id": 2,
-      "name": "location2"
-    },
-    {
-      "id": 3,
-      "name": "location3"
-    }
-  ],
-  "foods": [
-    {
-      "id": 1,
-      "name": "food1",
-      "price": 1,
-      "description": "ab1"
-    },
-    {
-      "id": 2,
-      "name": "food2",
-      "price": 2,
-      "description": "ab2"
-    },
-    {
-      "id": 3,
-      "name": "food3",
-      "price": 3,
-      "description": "ab3"
-    }
-  ],
-  "drinks": [
-    {
-      "id": 1,
-      "name": "drink1",
-      "price": 1
-    },
-    {
-      "id": 2,
-      "name": "drink2",
-      "price": 2
-    },
-    {
-      "id": 3,
-      "name": "drink3",
-      "price": 3
-    }
-  ],
-  "desserts": [
-    {
-      "id": 1,
-      "name": "dessert1",
-      "price": 1
-    },
-    {
-      "id": 2,
-      "name": "dessert2",
-      "price": 2
-    },
-    {
-      "id": 3,
-      "name": "dessert3",
-      "price": 3
-    }
-  ],
-  "locationFoods": [
-    {
-      "id": 1,
-      "name": "locationFoods1",
-      "locationId": "2",
-      "foodId": "2",
-      "quantity": 5
-    },
-    {
-      "id": 2,
-      "name": "locationFoods2",
-      "locationId": "1",
-      "foodId": "1",
-      "quantity": 4
-    },
-    {
-      "id": 3,
-      "name": "locationFoods3",
-      "locationId": "3",
-      "foodId": "3",
-      "quantity": 6
-    }
-  ],
-  "orders": [
-    {
-      "locationId": 0,
-      "foodId": 0,
-      "drinkId": 0,
-      "dessertId": 0,
-      "id": 1
-    },
-    {
-      "locationId": 1,
-      "foodId": 1,
-      "drinkId": 2,
-      "dessertId": 3,
-      "id": 2
-    },
-    {
-      "locationId": 1,
-      "foodId": 1,
-      "drinkId": 2,
-      "dessertId": 3,
-      "id": 3
-    },
-    {
-      "locationId": 1,
-      "foodId": 1,
-      "drinkId": 2,
-      "dessertId": 3,
-      "id": 4
-    },
-    {
-      "locationId": 0,
-      "foodId": 0,
-      "drinkId": 0,
-      "dessertId": 0,
-      "id": 5
-    },
-    {
-      "locationId": 1,
-      "foodId": 1,
-      "drinkId": 1,
-      "dessertId": 1,
-      "id": 6
-    }
-  ]
-}
+    "locations": [
+      {
+        "id": 1,
+        "name": "9th Street"
+      },
+      {
+        "id": 2,
+        "name": "Kevin's house"
+      },
+      {
+        "id": 3,
+        "name": "Downtown"
+      },
+      {
+        "id": 4,
+        "name": "My mom's basement"
+      },
+      {
+        "id": 5,
+        "name": "Also Kevin's house but the other side"
+      }
+    ],
+    "foods": [
+      {
+        "id": 1,
+        "name": "The BIG weiner",
+        "price": 5.50,
+        "description": "Our foot long weiner with all the fixins"
+      },
+      {
+        "id": 2,
+        "name": "Dirty Dog",
+        "price": 3.50,
+        "description": "regular weiner with chilli"
+      },
+      {
+        "id": 3,
+        "name": "Teenie Weenie",
+        "price": 1.50,
+        "description": "Our small dog"
+      },
+      {
+        "id": 4,
+        "name": "Plain Jane",
+        "price": 1.50,
+        "description": "Plain weiner"
+      },
+      {
+        "id": 5,
+        "name": "Wasted Weiner",
+        "price": 5.00,
+        "description": "Beer Battered weiner fried in peanut oil"
+      }
+      
+    ],
+    "drinks": [
+      {
+        "id": 1,
+        "name": "Bun Honey Meat Mead",
+        "price": 3.50
+      },
+      {
+        "id": 2,
+        "name": "Hotdog Flavored Water",
+        "price": 2.00
+      },
+      {
+        "id": 3,
+        "name": "Weaner Wine",
+        "price": 3.50
+      },
+      {
+        "id": 4,
+        "name": "Catchup Kombucha",
+        "price": 3.50
+      },
+      {
+        "id": 5,
+        "name": "Water",
+        "price": 1.00
+      }
+    ],
+    "desserts": [
+      {
+        "id": 1,
+        "name": "Weiner Road (its like rocky road but with weiners)",
+        "price": 3.50
+      },
+      {
+        "id": 2,
+        "name": "Chocolate Weiner",
+        "price": 2.00
+      },
+      {
+        "id": 3,
+        "name": "Candy Coated Weiner",
+        "price": 3.00
+      },
+      {
+        "id": 4,
+        "name": "Candied Nuts",
+        "price": 1.50
+      },
+      {
+        "id": 5,
+        "name": "A bowl of chocolate",
+        "price": 2.50
+      }
+    ],
+    "locationFoods": [
+      {
+        "id": 1,
+        "name": "locationFoods1",
+        "locationId": "1",
+        "foodId": "1",
+        "quantity": 50
+      },
+      {
+        "id": 2,
+        "name": "locationFoods2",
+        "locationId": "2",
+        "foodId": "2",
+        "quantity": 48
+      },
+      {
+        "id": 3,
+        "name": "locationFoods3",
+        "locationId": "3",
+        "foodId": "3",
+        "quantity": 62
+      },
+      {
+        "id": 4,
+        "name": "locationFoods4",
+        "locationId": "4",
+        "foodId": "4",
+        "quantity": 61
+      },
+      {
+        "id": 5,
+        "name": "locationFoods5",
+        "locationId": "5",
+        "foodId": "5",
+        "quantity": 56
+      }
+    ],
+    "locationDrinks":[
+      {
+        "id": 1,
+        "name": "locationDrinks1",
+        "locationId": "1",
+        "drinkId": "1",
+        "quantity": 51
+      },
+      {
+        "id": 2,
+        "name": "locationDrinks2",
+        "locationId": "2",
+        "drinkId": "2",
+        "quantity": 42
+      },
+      {
+        "id": 3,
+        "name": "locationDrinks3",
+        "locationId": "3",
+        "drinkId": "3",
+        "quantity": 63
+      },
+      {
+        "id": 4,
+        "name": "locationDrinks4",
+        "locationId": "4",
+        "drinkId": "4",
+        "quantity": 56
+      },
+      {
+        "id": 5,
+        "name": "locationDrinks5",
+        "locationId": "5",
+        "drinkId": "5",
+        "quantity": 66
+      }
+    ],
+    "locationDesserts":[
+      {
+        "id": 1,
+        "name": "locationDesserts1",
+        "locationId": "1",
+        "dessertId": "1",
+        "quantity": 52
+      },
+      {
+        "id": 2,
+        "name": "locationDesserts2",
+        "locationId": "2",
+        "dessertId": "2",
+        "quantity": 43
+      },
+      {
+        "id": 3,
+        "name": "locationDesserts3",
+        "locationId": "3",
+        "dessertId": "3",
+        "quantity": 64
+      },
+      {
+        "id": 4,
+        "name": "locationDesserts4",
+        "locationId": "4",
+        "dessertId": "4",
+        "quantity": 65
+      },
+      {
+        "id": 5,
+        "name": "locationDesserts5",
+        "locationId": "5",
+        "dessertId": "5",
+        "quantity": 66
+      }
+    ],
+    "orders": []
+  }
