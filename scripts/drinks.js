@@ -23,7 +23,7 @@ export const drinkOptions = async () => {
  
 
 for (const drink of drinks){ //check name "drinks"
-    drinkOptionsHTML+=`<option value="${drink.id}">${drink.name}</option>`
+    drinkOptionsHTML+=`<option value="${drink.id}">${drink.name}">${drink.image}</option>`
 }
 
 drinkOptionsHTML+= `</select>`

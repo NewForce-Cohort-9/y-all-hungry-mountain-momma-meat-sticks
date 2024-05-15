@@ -20,9 +20,9 @@ export const Orders = async () => {
                 currency: "USD"
             });
 
-            const orderFood = order.food ? order.food.name : "None";
-            const orderDrink = order.drink ? order.drink.name : "None";
-            const orderDessert = order.dessert ? order.dessert.name : "None";
+            const orderFood = order.food ? order.food.name ? order.food.image : "None";
+            const orderDrink = order.drink ? order.drink.name ? order.drink.image: "None";
+            const orderDessert = order.dessert ? order.dessert.name ? order.dessert.image: "None";
 
             return `
                 <section class="order card">
