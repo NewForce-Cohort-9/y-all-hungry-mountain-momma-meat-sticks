@@ -1,5 +1,6 @@
 import { setLocationChoice } from "./transientState.js"
 
+// let locations = [];
 
 const handleLocationChoice = (event) => {
     if (event.target.id === "location") {
@@ -27,12 +28,12 @@ for (const location of locations){ //check name "locations"
 
 locationOptionsHTML+= `</select>`
 
-
+document.querySelector(".choices__location").innerHTML = locationOptionsHTML;//try to get food-location link
 
 //locationOptionsHTML+=`You're picking up your order at ${location.name}`
 //debugger
 
-locationOptionsHTML += `<div id="locationMessage"></div>`;
+// locationOptionsHTML += `<div id="locationMessage"></div>`
 return locationOptionsHTML
 }
 
