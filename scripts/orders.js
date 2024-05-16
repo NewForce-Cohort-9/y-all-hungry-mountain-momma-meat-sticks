@@ -20,14 +20,13 @@ export const Orders = async () => {
                 currency: "USD"
             })
 
-            const orderFood = order.food ? order.food.name : "None"
-            const orderDrink = order.drink ? order.drink.name : "None"
-            const orderDessert = order.dessert ? order.dessert.name : "None"
+            const orderFood = order.food ? order.food.name : "No Food";
+            const orderDrink = order.drink ? order.drink.name: "No Drink";
+            const orderDessert = order.dessert ? order.dessert.name: "No Dessert";
 
-            const orderFoodImage = order.food ? `<img src="${order.food.image}" />` : "None"
-            const orderDrinkImage = order.drink ? `<img src="${order.drink.image}" />` : "None"
-            const orderDessertImage = order.dessert ? `<img src="${order.dessert.image}" />` : "None"
-
+            const orderFoodImage = order.food ? `<img class="food-image" src="${order.food.image}" />` :  ""  // Added .food-image class
+            const orderDrinkImage = order.drink ? `<img class="drink-image" src="${order.drink.image}" />` : "" // Added .drink-image class
+            const orderDessertImage = order.dessert ? `<img class="dessert-image" src="${order.dessert.image}" />` : "" // Added .dessert-image class
             return `
                 <section class="order card">
                     <p>${orderFoodImage}  ${orderFood}</p>
