@@ -114,36 +114,36 @@
     {
       "id": 1,
       "name": "locationFoods1",
-      "locationId": "1",
-      "foodId": "1",
+      "locationId": 1,
+      "foodId": 1,
       "quantity": 50
     },
     {
       "id": 2,
       "name": "locationFoods2",
-      "locationId": "2",
-      "foodId": "2",
+      "locationId": 2,
+      "foodId": 2,
       "quantity": 48
     },
     {
       "id": 3,
       "name": "locationFoods3",
-      "locationId": "3",
-      "foodId": "3",
+      "locationId": 3,
+      "foodId": 3,
       "quantity": 62
     },
     {
       "id": 4,
       "name": "locationFoods4",
-      "locationId": "4",
-      "foodId": "4",
+      "locationId": 4,
+      "foodId": 4,
       "quantity": 61
     },
     {
       "id": 5,
       "name": "locationFoods5",
-      "locationId": "5",
-      "foodId": "5",
+      "locationId": 5,
+      "foodId": 5,
       "quantity": 56
     }
   ],
@@ -151,36 +151,36 @@
     {
       "id": 1,
       "name": "locationDrinks1",
-      "locationId": "1",
-      "drinkId": "1",
+      "locationId": 1,
+      "drinkId": 1,
       "quantity": 51
     },
     {
       "id": 2,
       "name": "locationDrinks2",
-      "locationId": "2",
-      "drinkId": "2",
+      "locationId": 2,
+      "drinkId": 2,
       "quantity": 42
     },
     {
       "id": 3,
       "name": "locationDrinks3",
-      "locationId": "3",
-      "drinkId": "3",
+      "locationId": 3,
+      "drinkId": 3,
       "quantity": 63
     },
     {
       "id": 4,
       "name": "locationDrinks4",
-      "locationId": "4",
-      "drinkId": "4",
+      "locationId": 4,
+      "drinkId": 4,
       "quantity": 56
     },
     {
       "id": 5,
       "name": "locationDrinks5",
-      "locationId": "5",
-      "drinkId": "5",
+      "locationId": 5,
+      "drinkId": 5,
       "quantity": 66
     }
   ],
@@ -188,36 +188,36 @@
     {
       "id": 1,
       "name": "locationDesserts1",
-      "locationId": "1",
-      "dessertId": "1",
+      "locationId": 1,
+      "dessertId": 1,
       "quantity": 52
     },
     {
       "id": 2,
       "name": "locationDesserts2",
-      "locationId": "2",
-      "dessertId": "2",
+      "locationId": 2,
+      "dessertId": 2,
       "quantity": 43
     },
     {
       "id": 3,
       "name": "locationDesserts3",
-      "locationId": "3",
-      "dessertId": "3",
+      "locationId": 3,
+      "dessertId": 3,
       "quantity": 64
     },
     {
       "id": 4,
       "name": "locationDesserts4",
-      "locationId": "4",
-      "dessertId": "4",
+      "locationId": 4,
+      "dessertId": 4,
       "quantity": 65
     },
     {
       "id": 5,
       "name": "locationDesserts5",
-      "locationId": "5",
-      "dessertId": "5",
+      "locationId": 5,
+      "dessertId": 5,
       "quantity": 66
     }
   ],

@@ -1,5 +1,5 @@
 export const Orders = async () => {
-    const fetchResponse = await fetch("http://localhost:8088/orders?_expand=location&_expand=food&_expand=drink&_expand=dessert");
+    const fetchResponse = await fetch("http://localhost:8088/orders?_expand=location&_expand=food&_expand=drink&_expand=dessert")
     const orders = await fetchResponse.json()
 
     let ordersHTML = '<article class="orderList">'
@@ -36,7 +36,7 @@ export const Orders = async () => {
                     <p>Total Price: ${orderPriceFormatted}</p>
                 </section>`
         }
-    ).join("");
+    ).join("")
 
     ordersHTML += `</article>`
 
