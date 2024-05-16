@@ -220,61 +220,6 @@
     }
   ],
   "orders": [
-    {
-      "locationId": 4,
-      "foodId": 0,
-      "drinkId": 0,
-      "dessertId": 0,
-      "id": 1
-    },
-    {
-      "locationId": 1,
-      "foodId": 0,
-      "drinkId": 0,
-      "dessertId": 0,
-      "id": 2
-    },
-    {
-      "locationId": 0,
-      "foodId": 0,
-      "drinkId": 0,
-      "dessertId": 0,
-      "id": 3
-    },
-    {
-      "locationId": 0,
-      "foodId": 0,
-      "drinkId": 0,
-      "dessertId": 0,
-      "id": 4
-    },
-    {
-      "locationId": 0,
-      "foodId": 0,
-      "drinkId": 0,
-      "dessertId": 0,
-      "id": 5
-    },
-    {
-      "locationId": 0,
-      "foodId": 0,
-      "drinkId": 0,
-      "dessertId": 0,
-      "id": 6
-    },
-    {
-      "locationId": 0,
-      "foodId": 0,
-      "drinkId": 0,
-      "dessertId": 0,
-      "id": 7
-    },
-    {
-      "locationId": 0,
-      "foodId": 0,
-      "drinkId": 0,
-      "dessertId": 0,
-      "id": 8
-    }
+    
   ]
 }
