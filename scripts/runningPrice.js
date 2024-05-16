@@ -1,6 +1,7 @@
 export const updateTotalPrice = () => {
     let total = 0;
 
+
     const dessertSelect = document.getElementById('dessert');
     if (dessertSelect) {
         const dessertPrice = parseFloat(dessertSelect.value);

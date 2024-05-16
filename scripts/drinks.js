@@ -3,7 +3,8 @@ import { setDrinkChoice } from './transientState.js';
 
 const handleDrinksChoice = (event) => {
     if (event.target.id === "drink") {
-        setDrinkChoice(parseInt(event.target.value));
+        const chosenDrinkId = parseInt(event.target.value);
+        setDrinkChoice(chosenDrinkId)
         updateTotalPrice(); // Update the total price whenever a drink is selected
     }
 };

@@ -3,7 +3,8 @@ import { updateTotalPrice } from './runningPrice.js';
 
 const handleDessertsChoice = (event) => {
     if (event.target.id === "dessert") {
-        setDessertChoice(parseInt(event.target.value));
+       const chosenDessertId = parseInt(event.target.value);
+       setDessertChoice(chosenDessertId)
         updateTotalPrice(); // Update the total price whenever a dessert is selected
     }
 };

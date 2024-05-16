@@ -3,7 +3,8 @@ import { setFoodChoice } from './transientState.js';
 
 const handleFoodChoice = (event) => {
     if (event.target.id === "food") {
-        setFoodChoice(parseInt(event.target.value));
+        const chosenFoodId = parseInt(event.target.value);
+        setFoodChoice(chosenFoodId)
         updateTotalPrice(); // Update the total price whenever a food item is selected
     }
 };
