@@ -26,31 +26,36 @@
       "id": 1,
       "name": "The BIG weiner",
       "price": 5.5,
-      "description": "Our foot long weiner with all the fixins"
+      "description": "Our foot long weiner with all the fixins",
+      "image": "https://pics.craiyon.com/2023-07-04/44f2fddddea24c5b8ef7146b2d67be6d.webp"
     },
     {
       "id": 2,
       "name": "Dirty Dog",
       "price": 3.5,
-      "description": "regular weiner with chilli"
+      "description": "regular weiner with chilli",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQOz44F2B8u9cY9G_5QeSTme32fEIkZQgyNBe9zqeAhw&s"
     },
     {
       "id": 3,
       "name": "Teenie Weenie",
       "price": 1.5,
-      "description": "Our small dog"
+      "description": "Our small dog",
+      "image": "https://i.pinimg.com/736x/15/75/84/157584cfa7ff8f89253017befea55d0d.jpg"
     },
     {
       "id": 4,
       "name": "Plain Jane",
       "price": 1.5,
-      "description": "Plain weiner"
+      "description": "Plain weiner",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3k9MKHTgsKOumpSgsRFjU_85UEu6TeRtaNA0s3o1dTA&s"
     },
     {
       "id": 5,
       "name": "Wasted Weiner",
       "price": 5,
-      "description": "Beer Battered weiner fried in peanut oil"
+      "description": "Beer Battered weiner fried in peanut oil",
+      "image": "https://i2.wp.com/recipes.net/wp-content/uploads/2020/05/beer-battered-corn-dogs-recipe.jpg"
     }
   ],
   "drinks": [
@@ -63,49 +68,58 @@
     {
       "id": 2,
       "name": "Hotdog Flavored Water",
-      "price": 2
+      "price": 2,
+      "image": "https://www.hindustantimes.com/ht-img/img/2024/03/28/550x309/Screenshot_2024-03-28_154004_1711620616112_1711620622378.png"
     },
     {
       "id": 3,
       "name": "Weaner Wine",
-      "price": 3.5
+      "price": 3.5,
+      "image": "https://www.thedailymeal.com/img/gallery/what-wines-pair-with-hot-dogs/winehotdog.jpg"
     },
     {
       "id": 4,
       "name": "Catchup Kombucha",
-      "price": 3.5
+      "price": 3.5,
+      "image": "https://www.cravethegood.com/wp-content/uploads/2022/03/cranberry-kombucha-recipe-6-683x1024.jpg"
     },
     {
       "id": 5,
       "name": "Water",
-      "price": 1
+      "price": 1,
+      "image": "https://www.cravethegood.com/wp-content/uploads/2022/03/cranberry-kombucha-recipe-6-683x1024.jpg"
     }
   ],
   "desserts": [
     {
       "id": 1,
       "name": "Weiner Road (its like rocky road but with weiners)",
-      "price": 3.5
+      "price": 3.5,
+      "image": ""
     },
     {
       "id": 2,
       "name": "Chocolate Weiner",
-      "price": 2
+      "price": 2,
+      "image": "https://media.discordapp.net/attachments/1015116419668660276/1240723844730323034/dreamlookai-generated-image-1.png?ex=664799a0&is=66464820&hm=a75b64418d0e31055798bb3e8c6b0bc82707acbc7ce252f7dd7b550cd24b3182&=&format=webp&quality=lossless&width=662&height=662"
     },
     {
       "id": 3,
       "name": "Candy Coated Weiner",
-      "price": 3
+      "price": 3,
+      "image": "https://media.discordapp.net/attachments/1015116419668660276/1240724339129847899/dreamlookai-generated-image-2.png?ex=66479a15&is=66464895&hm=b993927ebb39b3d76519eed63a102235904e569fa6cb13e12850441fbf5d66d1&=&format=webp&quality=lossless&width=662&height=662"
     },
     {
       "id": 4,
       "name": "Candied Nuts",
-      "price": 1.5
+      "price": 1.5,
+      "image": "https://media.discordapp.net/attachments/1015116419668660276/1240724448144003213/dreamlookai-generated-image-7.png?ex=66479a2f&is=664648af&hm=bd5359055865482fa6cb6c08d9e56fcfd9ea555fa7a051a5eb0a56e53b70684d&=&format=webp&quality=lossless&width=662&height=662"
     },
     {
       "id": 5,
       "name": "A bowl of chocolate",
-      "price": 2.5
+      "price": 2.5,
+      "image": "https://media.discordapp.net/attachments/1015116419668660276/1240723622109249668/dreamlookai-generated-image-1.png?ex=6647996b&is=664647eb&hm=e9e84ec9c4ae11135e9b6927371bcd209604491ca248d3c2f359030afe6abb2f&=&format=webp&quality=lossless&width=662&height=662"
     }
   ],
   "locationFoods": [
