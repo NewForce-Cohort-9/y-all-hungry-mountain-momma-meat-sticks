@@ -24,12 +24,15 @@ export const Orders = async () => {
             const orderDrink = order.drink ? order.drink.name : "None"
             const orderDessert = order.dessert ? order.dessert.name : "None"
 
-            
+            const orderFoodImage = order.food ? `<img src="${order.food.image}" />` : "None"
+            const orderDrinkImage = order.drink ? `<img src="${order.drink.image}" />` : "None"
+            const orderDessertImage = order.dessert ? `<img src="${order.dessert.image}" />` : "None"
+
             return `
                 <section class="order card">
-                    <p>(Food image)  ${orderFood}</p>
-                    <p>(Drink image)  ${orderDrink}</p>
-                    <p>(Dessert image)  ${orderDessert}</p>
+                    <p>${orderFoodImage}  ${orderFood}</p>
+                    <p>${orderDrinkImage}  ${orderDrink}</p>
+                    <p>${orderDessertImage}  ${orderDessert}</p>
                     <p>Total Price: ${orderPriceFormatted}</p>
                 </section>`
         }
