@@ -11,6 +11,7 @@ export const Orders = async () => {
             const dessertPrice = order.dessert ? order.dessert.price : 0
             let orderPrice = foodPrice + drinkPrice + dessertPrice
 
+
             // Round the orderPrice to 2 decimal places
             orderPrice = orderPrice.toFixed(2)
 
