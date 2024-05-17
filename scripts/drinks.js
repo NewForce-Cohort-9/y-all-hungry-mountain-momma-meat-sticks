@@ -3,8 +3,8 @@ import { setDrinkChoice } from './transientState.js';
 
 const handleDrinksChoice = (event) => {
     if (event.target.id === "drink") {
-        //setDrinkChoice(parseInt(event.target.value)) // changes made here
-        updateTotalPrice() // Update the total price whenever a drink is selected
+        setDrinkChoice(parseFloat(event.target.value)); 
+        updateTotalPrice(); 
     }
 }
 
@@ -16,6 +16,7 @@ const handleDrinksChoice = (event) => {
 
 //document.addEventListener("change", handleDrinksChoice)
 
+document.addEventListener("change", handleDrinksChoice);
 
 export const drinkOptions = async (locationId) => {
     //console.log("Location Id:", locationId) 

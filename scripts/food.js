@@ -121,10 +121,10 @@
 import { updateTotalPrice } from './runningPrice.js'
 import { setFoodChoice } from './transientState.js' // Added setFoodChoice import
 
-const handleFoodChoice = (event) => {
-    if (event.target.id === "food") { // changes made here
-        //setFoodChoice(parseInt(event.target.value)) // changes made here
-        updateTotalPrice()
+const handleFoodsChoice = (event) => {
+    if (event.target.id === "food") {
+        setFoodChoice(parseFloat(event.target.value)); 
+        updateTotalPrice(); 
     }
 }
 
@@ -134,6 +134,7 @@ export const foodOptions = async (locationId) => {
     const foodItemsResponse = await fetch("http://localhost:8088/foods")
     const foodItems = await foodItemsResponse.json()
     console.log("Food Items:", foodItems)
+//document.addEventListener("change", handleFoodsChoice);
 
     const locationFoodItemsResponse = await fetch("http://localhost:8088/locationFoods")
     const locationFoodItems = await locationFoodItemsResponse.json()
@@ -165,6 +166,6 @@ export const updateFoodOptions = async (locationId) => {
     const foodContainer = document.querySelector(".choices__food.options")
     if (foodContainer) {
         foodContainer.innerHTML = foodOptionsHTML
-        foodContainer.addEventListener('change', handleFoodChoice) // changes made here
+        foodContainer.addEventListener('change', handleFoodsChoice) // changes made here
     }
 }
