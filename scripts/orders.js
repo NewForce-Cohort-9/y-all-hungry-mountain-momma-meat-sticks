@@ -20,17 +20,20 @@ export const Orders = async () => {
                 currency: "USD"
             });
 
-            const orderFood = order.food ? order.food.name : "None";
-            const orderDrink = order.drink ? order.drink.name : "None";
-            const orderDessert = order.dessert ? order.dessert.name : "None";
+            const orderFood = order.food ? order.food.name : "No Food";
+            const orderDrink = order.drink ? order.drink.name: "No Drink";
+            const orderDessert = order.dessert ? order.dessert.name: "No Dessert";
 
+            const orderFoodImage = order.food ? `<img class="food-image" src="${order.food.image}" />` :  ""  // Added .food-image class
+            const orderDrinkImage = order.drink ? `<img class="drink-image" src="${order.drink.image}" />` : "" // Added .drink-image class
+            const orderDessertImage = order.dessert ? `<img class="dessert-image" src="${order.dessert.image}" />` : "" // Added .dessert-image class
             return `
                 <section class="order card">
-                    <p>(Food image)  ${orderFood}</p>
-                    <p>(Drink image)  ${orderDrink}</p>
-                    <p>(Dessert image)  ${orderDessert}</p>
+                    <p>${orderFoodImage}  ${orderFood}</p>
+                    <p>${orderDrinkImage}  ${orderDrink}</p>
+                    <p>${orderDessertImage}  ${orderDessert}</p>
                     <p>Total Price: ${orderPriceFormatted}</p>
-                </section>`;
+                </section>`
         }
     ).join("");
 

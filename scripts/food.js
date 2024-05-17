@@ -1,16 +1,14 @@
 import { updateTotalPrice } from './runningPrice.js';
 import { setFoodChoice } from './transientState.js';
 
-const handleFoodChoice = (event) => {
+const handleFoodsChoice = (event) => {
     if (event.target.id === "food") {
-        const chosenFoodId = parseInt(event.target.value);
-        setFoodChoice(chosenFoodId)
-        updateTotalPrice(); // Update the total price whenever a food item is selected
+        setFoodChoice(parseFloat(event.target.value)); 
+        updateTotalPrice(); 
     }
 };
 
-document.addEventListener("change", handleFoodChoice)
-
+document.addEventListener("change", handleFoodsChoice);
 
 export const foodOptions = async () => {
     const response = await fetch("http://localhost:8088/foods");
