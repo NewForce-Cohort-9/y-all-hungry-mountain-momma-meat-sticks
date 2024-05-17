@@ -9,7 +9,7 @@ export const Orders = async () => {
             const foodPrice = order.food ? order.food.price : 0
             const drinkPrice = order.drink ? order.drink.price : 0
             const dessertPrice = order.dessert ? order.dessert.price : 0
-            let orderPrice = foodPrice + drinkPrice + dessertPrice;
+            let orderPrice = foodPrice + drinkPrice + dessertPrice
 
             // Round the orderPrice to 2 decimal places
             orderPrice = orderPrice.toFixed(2)
@@ -20,18 +20,19 @@ export const Orders = async () => {
                 currency: "USD"
             })
 
-            const orderFood = order.food ? order.food.name : "No Food";
-            const orderDrink = order.drink ? order.drink.name: "No Drink";
-            const orderDessert = order.dessert ? order.dessert.name: "No Dessert";
+            const orderFood = order.food ? order.food.name : "No Food"
+            const orderDrink = order.drink ? order.drink.name : "No Drink"
+            const orderDessert = order.dessert ? order.dessert.name : "No Dessert"
 
-            const orderFoodImage = order.food ? `<img class="food-image" src="${order.food.image}" />` :  ""  // Added .food-image class
-            const orderDrinkImage = order.drink ? `<img class="drink-image" src="${order.drink.image}" />` : "" // Added .drink-image class
-            const orderDessertImage = order.dessert ? `<img class="dessert-image" src="${order.dessert.image}" />` : "" // Added .dessert-image class
+            const orderFoodImage = order.food ? `<img class="food-image" src="${order.food.image}" />` : ""
+            const orderDrinkImage = order.drink ? `<img class="drink-image" src="${order.drink.image}" />` : ""
+            const orderDessertImage = order.dessert ? `<img class="dessert-image" src="${order.dessert.image}" />` : ""
+
             return `
                 <section class="order card">
-                    <p>${orderFoodImage}  ${orderFood}</p>
-                    <p>${orderDrinkImage}  ${orderDrink}</p>
-                    <p>${orderDessertImage}  ${orderDessert}</p>
+                    <p>${orderFoodImage} ${orderFood}</p>
+                    <p>${orderDrinkImage} ${orderDrink}</p>
+                    <p>${orderDessertImage} ${orderDessert}</p>
                     <p>Total Price: ${orderPriceFormatted}</p>
                 </section>`
         }
