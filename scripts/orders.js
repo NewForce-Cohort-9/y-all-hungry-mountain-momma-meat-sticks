@@ -24,6 +24,7 @@ export const Orders = async () => {
             const orderFood = order.food ? order.food.name : "No Wiener for you?!  What're you doing here???";
             const orderDrink = order.drink ? order.drink.name: "No Drink";
             const orderDessert = order.dessert ? order.dessert.name: "No Dessert";
+            const orderLocation = order.location ? order.location.name: "";
 
             const orderFoodImage = order.food ? `<img class="food-image" src="${order.food.image}" />` : ""
             const orderDrinkImage = order.drink ? `<img class="drink-image" src="${order.drink.image}" />` : ""
@@ -35,6 +36,7 @@ export const Orders = async () => {
                     <p>${orderDrinkImage} ${orderDrink}</p>
                     <p>${orderDessertImage} ${orderDessert}</p>
                     <p>Total Price: ${orderPriceFormatted}</p>
+                    <p>Your order has been placed at our ${orderLocation} location.</p>
                 </section>`
         }
     ).join("")
