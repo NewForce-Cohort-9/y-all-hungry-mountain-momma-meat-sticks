@@ -17,9 +17,9 @@ export const dessertOptions = async () => {
     const desserts = await response.json();
 
     let dessertsOptionsHTML = "";
+    dessertsOptionsHTML += `<h1>Choose your Dessert!</h1>`
     dessertsOptionsHTML += `<select id="dessert">`;
-    dessertsOptionsHTML += `<option value="0">Desserts Items</option>`;
-    dessertsOptionsHTML += `<option value="none">None</option>`;
+    dessertsOptionsHTML += `<option value="0">None</option>`;
     for (const dessert of desserts) {
         dessertsOptionsHTML += `<option value="${dessert.id}" data-price="${dessert.price}">${dessert.name}</option>`;
     }

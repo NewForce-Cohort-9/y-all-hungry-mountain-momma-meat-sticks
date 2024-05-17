@@ -15,9 +15,9 @@ export const foodOptions = async () => {
     const foodItems = await response.json();
 
     let foodOptionsHTML = "";
+    foodOptionsHTML += `<h1>Choose your Wiener!</h1>`
     foodOptionsHTML += `<select id="food">`;
-    foodOptionsHTML += `<option value="0">Food Items</option>`;
-    foodOptionsHTML += `<option value="none">None</option>`;
+    foodOptionsHTML += `<option value="0">None</option>`;
     for (const food of foodItems) {
         foodOptionsHTML += `<option value="${food.id}" data-price="${food.price}">${food.name}</option>`;
     }
