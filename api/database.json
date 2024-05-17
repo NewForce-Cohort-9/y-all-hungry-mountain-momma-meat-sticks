@@ -234,26 +234,6 @@
     }
   ],
   "orders": [
-    {
-      "locationId": 0,
-      "foodId": 3,
-      "drinkId": 1,
-      "dessertId": 4,
-      "id": 1
-    },
-    {
-      "locationId": 0,
-      "foodId": 0,
-      "drinkId": 5,
-      "dessertId": 0,
-      "id": 2
-    },
-    {
-      "locationId": 0,
-      "foodId": 0,
-      "drinkId": 0,
-      "dessertId": 0,
-      "id": 3
-    }
+   
   ]
 }
