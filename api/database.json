@@ -95,7 +95,7 @@
       "id": 1,
       "name": "Weiner Road (its like rocky road but with weiners)",
       "price": 3.5,
-      "image": "https://pyxis.nymag.com/v1/imgs/be2/b87/f93b455d2e9c2f178614ea69c05c94c9bb-hot-dog-split-comp-final-cherries.2x.rvertical.w570.jpg"
+      "image": "./images/wiener_road.jpg"
     },
     {
       "id": 2,
