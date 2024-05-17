@@ -27,10 +27,11 @@ export const foodOptions = async (locationId) => {
     const availableFoodIds = filteredLocationFoodItems.map(filteredLFItem => filteredLFItem.foodId)
     console.log("Available Food Ids:", availableFoodIds)
 
-    let foodOptionsHTML = `<select id="food">`
-    foodOptionsHTML += `<option value="0">Food Items</option>`
-    foodOptionsHTML += `<option value="none">None</option>`
 
+    let foodOptionsHTML = "";
+    foodOptionsHTML += `<h1>Choose your Wiener!</h1>`
+    foodOptionsHTML += `<select id="food">`;
+    foodOptionsHTML += `<option value="0">None</option>`;
     for (const food of foodItems) {
         if (availableFoodIds.includes(food.id)) {
             foodOptionsHTML += `<option value="${food.id}" data-price="${food.price}">${food.name}</option>`
@@ -45,8 +46,6 @@ export const foodOptions = async (locationId) => {
 export const updateFoodOptions = async (locationId) => {
     const foodOptionsHTML = await foodOptions(locationId)
     const foodContainer = document.querySelector(".choices__food.options")
-    if (foodContainer) {
-        foodContainer.innerHTML = foodOptionsHTML
-        foodContainer.addEventListener('change', handleFoodsChoice)
-    }
+    foodContainer.innerHTML = foodOptionsHTML
+    foodContainer.addEventListener('change', handleFoodsChoice)
 }

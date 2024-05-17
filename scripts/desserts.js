@@ -14,7 +14,7 @@ export const dessertOptions = async (locationId) => {
     const dessertItemsResponse = await fetch("http://localhost:8088/desserts")
     const dessertItems = await dessertItemsResponse.json()
     console.log("Dessert Items:", dessertItems)
-    
+
     //document.addEventListener("change", handleDessertsChoice)
 
     const locationDessertItemsResponse = await fetch("http://localhost:8088/locationDesserts")
@@ -27,10 +27,10 @@ export const dessertOptions = async (locationId) => {
     const availableDessertIds = filteredLocationDessertItems.map(filteredLFItem => filteredLFItem.dessertId)
     console.log("Available Dessert Ids:", availableDessertIds)
 
-    let dessertOptionsHTML = `<select id="dessert">`
-    dessertOptionsHTML += `<option value="0">Dessert Items</option>`
-    dessertOptionsHTML += `<option value="none">None</option>`
-
+    let dessertOptionsHTML = "";
+    dessertOptionsHTML += `<h1>Choose your Dessert!</h1>`
+    dessertOptionsHTML += `<select id="dessert">`;
+    dessertOptionsHTML += `<option value="0">None</option>`;
     for (const dessert of dessertItems) {
         if (availableDessertIds.includes(dessert.id)) {
             dessertOptionsHTML += `<option value="${dessert.id}" data-price="${dessert.price}">${dessert.name}</option>`
@@ -45,8 +45,6 @@ export const dessertOptions = async (locationId) => {
 export const updateDessertOptions = async (locationId) => {
     const dessertOptionsHTML = await dessertOptions(locationId)
     const dessertContainer = document.querySelector(".choices__dessert.options")
-    if (dessertContainer) {
-        dessertContainer.innerHTML = dessertOptionsHTML
-        dessertContainer.addEventListener('change', handleDessertsChoice)
-    }
+    dessertContainer.innerHTML = dessertOptionsHTML
+    dessertContainer.addEventListener('change', handleDessertsChoice)
 }

@@ -21,14 +21,14 @@ export const Orders = async () => {
                 currency: "USD"
             })
 
-            const orderFood = order.food ? order.food.name : "No Food"
-            const orderDrink = order.drink ? order.drink.name : "No Drink"
-            const orderDessert = order.dessert ? order.dessert.name : "No Dessert"
+            const orderFood = order.food ? order.food.name : "No Wiener for you?!  What're you doing here???";
+            const orderDrink = order.drink ? order.drink.name: "No Drink";
+            const orderDessert = order.dessert ? order.dessert.name: "No Dessert";
 
             const orderFoodImage = order.food ? `<img class="food-image" src="${order.food.image}" />` : ""
             const orderDrinkImage = order.drink ? `<img class="drink-image" src="${order.drink.image}" />` : ""
             const orderDessertImage = order.dessert ? `<img class="dessert-image" src="${order.dessert.image}" />` : ""
-
+            
             return `
                 <section class="order card">
                     <p>${orderFoodImage} ${orderFood}</p>
