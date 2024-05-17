@@ -1,7 +1,7 @@
 export const updateTotalPrice = () => {
-    let total = 0;
+    let total = 0
 
-    const dessertSelect = document.getElementById('dessert');
+    const dessertSelect = document.getElementById('dessert')
     if (dessertSelect) {
         const selectedOption = dessertSelect.options[dessertSelect.selectedIndex];
         if (selectedOption.value !== "0") { 
@@ -11,8 +11,8 @@ export const updateTotalPrice = () => {
             }
         }
     }
-
-    const drinkSelect = document.getElementById('drink');
+ 
+    const drinkSelect = document.getElementById('drink')
     if (drinkSelect) {
         const selectedOption = drinkSelect.options[drinkSelect.selectedIndex];
         if (selectedOption.value !== "0") {
@@ -23,7 +23,7 @@ export const updateTotalPrice = () => {
         }
     }
 
-    const foodSelect = document.getElementById('food');
+    const foodSelect = document.getElementById('food')
     if (foodSelect) {
         const selectedOption = foodSelect.options[foodSelect.selectedIndex];
         if (selectedOption.value !== "0") {
@@ -34,5 +34,11 @@ export const updateTotalPrice = () => {
         }
     }
 
-    document.getElementById('totalPrice').textContent = total.toFixed(2);
-};
+    document.getElementById('totalPrice').textContent = total.toFixed(2)
+}
+
+
+
+
+
+
