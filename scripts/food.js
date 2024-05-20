@@ -21,24 +21,24 @@ export const foodOptions = async (locationId) => {
     const locationFoodItems = await locationFoodItemsResponse.json()
     console.log("Location Food Items:", locationFoodItems)
 
-    const filteredLocationFoodItems = locationFoodItems.filter(lfItem => lfItem.locationId === locationId)
-    console.log("Filtered Location Food Items:", filteredLocationFoodItems)
+    const filteredLocationFoodItems = locationFoodItems.filter(lfItem => lfItem.locationId === locationId);
+console.log("Filtered Location Food Items:", filteredLocationFoodItems);
 
-    const availableFoodIds = filteredLocationFoodItems.map(filteredLFItem => filteredLFItem.foodId)
-    console.log("Available Food Ids:", availableFoodIds)
+const availableFoods = filteredLocationFoodItems.map(filteredLFItem => {
+    const food = foodItems.find(food => food.id === filteredLFItem.foodId);
+    return { ...food, quantity: filteredLFItem.quantity };
+});
+console.log("Available Foods:", availableFoods);
 
+let foodOptionsHTML = "";
+foodOptionsHTML += `<h1>Choose your Food!</h1>`;
+foodOptionsHTML += `<select id="food">`;
+foodOptionsHTML += `<option value="0">None</option>`;
+for (const food of availableFoods) {
+    foodOptionsHTML += `<option value="${food.id}" data-price="${food.price}">${food.name} (Available: ${food.quantity})</option>`;
+}
+foodOptionsHTML += `</select>`;
 
-    let foodOptionsHTML = "";
-    foodOptionsHTML += `<h1>Choose your Wiener!</h1>`
-    foodOptionsHTML += `<select id="food">`;
-    foodOptionsHTML += `<option value="0">None</option>`;
-    for (const food of foodItems) {
-        if (availableFoodIds.includes(food.id)) {
-            foodOptionsHTML += `<option value="${food.id}" data-price="${food.price}">${food.name}</option>`
-        }
-    }
-
-    foodOptionsHTML += `</select>`
 
     return foodOptionsHTML
 }

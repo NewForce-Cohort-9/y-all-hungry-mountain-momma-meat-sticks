@@ -21,25 +21,24 @@ export const drinkOptions = async (locationId) => {
     const locationDrinkItems = await locationDrinkItemsResponse.json()
     console.log("Location Drink Items:", locationDrinkItems)
 
-    const filteredLocationDrinkItems = locationDrinkItems.filter(lfItem => lfItem.locationId === locationId)
-    console.log("Filtered Location Drink Items:", filteredLocationDrinkItems)
-
-    const availableDrinkIds = filteredLocationDrinkItems.map(filteredLFItem => filteredLFItem.drinkId)
-    console.log("Available Drink Ids:", availableDrinkIds)
-
-
+    const filteredLocationDrinkItems = locationDrinkItems.filter(lfItem => lfItem.locationId === locationId);
+    console.log("Filtered Location Drink Items:", filteredLocationDrinkItems);
+    
+    const availableDrinks = filteredLocationDrinkItems.map(filteredLFItem => {
+        const drink = drinkItems.find(drink => drink.id === filteredLFItem.drinkId);
+        return { ...drink, quantity: filteredLFItem.quantity };
+    });
+    console.log("Available Drinks:", availableDrinks);
+    
     let drinkOptionsHTML = "";
-    drinkOptionsHTML += `<h1>Choose your Drink!</h1>`
+    drinkOptionsHTML += `<h1>Choose your Drink!</h1>`;
     drinkOptionsHTML += `<select id="drink">`;
     drinkOptionsHTML += `<option value="0">None</option>`;
-    for (const drink of drinkItems) {
-        if (availableDrinkIds.includes(drink.id)) {
-            drinkOptionsHTML += `<option value="${drink.id}" data-price="${drink.price}">${drink.name}</option>`
-        }
+    for (const drink of availableDrinks) {
+        drinkOptionsHTML += `<option value="${drink.id}" data-price="${drink.price}">${drink.name} (Available: ${drink.quantity})</option>`;
     }
-
-    drinkOptionsHTML += `</select>`
-
+    drinkOptionsHTML += `</select>`;
+    
     return drinkOptionsHTML
 }
 
